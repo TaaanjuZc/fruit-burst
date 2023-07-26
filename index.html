@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+
+  <!-- google font collection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <!-- tailwind and daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'color-primary': '#F85559',
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+  </style>
+</head>
+<body>
+    <!-- this is the header section -->
+      <header class="max-w-7xl m-auto font-lato">  
+          <!-- navbar -->
+          <nav class="lg:my-16">
+            <div class="navbar lg:bg-color-primary rounded-full h-[120px] lg:px-5">
+              <div class="navbar-start hidden lg:block">
+                  <ul class="menu menu-horizontal text-[#fff] text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+              </div>
+              <div class="navbar-center lg:flex gap-3">
+                <img src="./images/logo.png" alt="">
+                <h3 class="lg:text-[#fff] text-4xl">Fruit Burst</h3>
+              </div>
+              
+              <div class="navbar-end">
+                <div class="border-2 rounded-full bg-[#fff] lg:px-7 hidden lg:block ">
+                  <input class="text-[#12121266] border-0 outline-none rounded-full p-3" type="text" placeholder="Search here"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+              </label>
+
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-xs">
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+          <!-- navbar end -->
+          <!-- banner section -->
+          
+      </header>
+
+
+      <!-- this is the main section -->
+      <main>
+
+      </main>
+</body>
+</html>
